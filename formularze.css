@@ -1,0 +1,52 @@
+label{
+    letter-spacing: 1px;
+}
+input{
+    background-color: #CDCDCD;
+    padding: 5px;
+    margin: 10px;
+    color: #000040;
+    border: 2px solid #AEA4BF;
+    border-radius: 5px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+input.przycisk{
+    width: 200px;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 2px;
+    background-color: #CDCDCD;
+    border: 2px solid #AEA4BF;
+    color: rgb(0, 0, 0);
+}
+input.przycisk:hover{
+    background-color: #AEA4BF;
+    color: white;
+}
+@media screen and (max-width: 481px) {
+    input{
+        padding: 3px;
+        margin: 7px;
+        font-size: 12px;
+    }
+    input.przycisk{
+        width: 40%;
+        padding: 10px;
+        font-weight: bold;
+        font-size: 10px;
+        margin: 12px 14px;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 720px) {
+    input{
+        padding: 4px;
+        margin: 8px;
+        font-size: 14px;
+    }
+    input.przycisk{
+        width: 45%;
+    }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" href="style.css" rel="stylesheet">
+    <link type="text/css" href="formularze.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,900&family=Madimi+One&display=swap" rel="stylesheet">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,900&family=Madimi+One&family=Outfit&display=swap" rel="stylesheet">
+    <title> Budowa formularzy </title>
+</head>
+<body>
+    <header><img src="zdjecia/html2.png" alt="logo"><h2>Szybki kurs <span id="html">HTML</span></h2></header>
+    <nav>
+        <ul id="nav">
+            <li><a href="indeks.html">Podstawowe znaczniki</a></li>
+            <li><a href="tabele.html">Tabele</a></li>
+            <li><a>Formularze</a>
+            <ul>
+                <li><a href="formularze.html">Pola formularza</a></li>
+                <li><a href="obliczenia.html">Obliczenia w formularzu</a></li>
+            </ul>
+            </li>
+            <li><a href="galeria.html" title="">Galeria</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h3>Podstawowe znaczniki HTML to:</h3>
+            <ul>
+                <li> &lt;form&gt; - znacznik podstawowy zawierający pola formularza</li>
+                <li> &lt;input&gt; - znacznik umożliwia wstawienie różnych pól (pole tekstowe, przycisk typu radio, przycisk typu checkbox) w zależności od wartości jego atrybutu type</li>
+                <li> &lt;select&gt; - poele formularza typu lista rozwijana</li>
+                <li> &lt;textarea&gt; - pole formularza typu obszar tekstowy</li>
+                <li> &lt;button&gt; - pole formularza typu przycisk</li>
+            </ul>
+            <h3>Przykładowy formularz HTML:</h3>
+            <form action="mailto:s99505@pollub.edu.pl" method="post" onreset="if(!confirm('Czy na pewno chcesz wyczyścić formularz?')) return false">
+                <label>Nazwisko:* </label><input type="text" name="nazw" pattern="[a-zA-Z]{3,}" title="Podaj co najmniej 3 znaki." required><br>
+                <label>Wiek: </label><input type="number" name="wiek" min="15" step="1" title="Wartość wymagana nie mniejsza niż 15."><br>
+                <label>Państwo: </label><select name="panstwo" id="panstwo">
+                    <option value=""> - </option>
+                    <option value="pl">Polska</option>
+                    <option value="eng">Wielka Brytania</option>
+                </select><br>
+                <label>Adres e-mail:* </label><input type="email" name="mail" pattern="^[a-zA-Z0-9_]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$" title="Podaj adres w formacie: identyfikator@domena.pl" required><br>
+                <h3>Zamawiam tutorial z języka:</h3>
+                <input type="checkbox" name="php" value="php"> PHP
+                <input type="checkbox" name="c" value="c"> C/C++
+                <input type="checkbox" name="j" value="j"> Java
+                <h3>Sposób zapłaty:*</h3>
+                <input type="radio" name="platnosc" value="e" required> eurocard
+                <input type="radio" name="platnosc" value="v" required> visa
+                <input type="radio" name="platnosc" value="p" required> przelew bankowy <br>
+                <input type="submit" value="Wyślij" class="przycisk">
+                <input type="reset" value="Anuluj" class="przycisk">
+            </form>
+        </section>
+        <aside>
+            <div class="box">
+                <h3>Walidatory:</h3>
+                <ul>
+                    <li> <a href="http://validator.w3.org/">HTML </a></li>
+                    <li> <a href="http://jigsaw.w3.org/css-validator/">CSS</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>Kursy:</h3>
+                <ul>
+                    <li> <a href="https://www.w3schools.com/html/"> HTML </a></li>
+                    <li> <a href="https://www.w3schools.com/css/"> CSS </a></li>
+                    <li> <a href="https://www.w3schools.com/js/"> JS </a></li>
+                    <li> <a href="https://www.w3schools.com/php/"> PHP </a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+    <footer>&copy;MB 2024</footer>
+</body>
+</html>

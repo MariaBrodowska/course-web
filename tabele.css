@@ -1,0 +1,79 @@
+table{
+    background: #CDCDCD;
+    text-align: center;
+    width: 94%;
+    margin: 2%;
+    border: 1pt solid #3B252C;
+}
+caption{
+    font-size: 120%;
+    font-weight: bold;
+}
+thead, tfoot{
+    background: #3B252C;
+    color: white;
+    font-size: 110%;
+    padding: 5pt;
+}
+td,th{
+    border: 1pt solid #3B252C;
+}
+tfoot a{
+    color: white;
+}
+table tbody tr:nth-child(even){
+    background: #AEA4BF;
+}
+@media screen and (max-width: 481px) {
+    table{
+        width: 98%;
+        font-size: 65%;
+    }
+    caption{
+        margin-bottom: 8px;
+    }
+    thead, tfoot{
+        font-size: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    #link{
+        font-size: 80%;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 720px) {
+    table{
+        width: 96%;
+        font-size: 62%;
+    }
+    caption{
+        font-size: 160%;
+        margin-bottom: 10px;
+    }
+    thead, tfoot{
+        font-size: 160%;
+        padding: 0;
+        margin: 0;
+    }
+    #link{
+        font-size: 80%;
+    }
+}
+@media screen and (min-width: 720px) {
+    table{
+        width: 96%;
+        font-size: 65%;
+    }
+    caption{
+        font-size: 160%;
+        margin-bottom: 10px;
+    }
+    thead, tfoot{
+        font-size: 150%;
+        padding: 0;
+        margin: 0;
+    }
+    #link{
+        font-size: 90%;
+    }
+}
